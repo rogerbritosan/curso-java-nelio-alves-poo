@@ -6,4 +6,5 @@
  *
  */
 module CursoJavaNelioAlvesPOO {
+	requires java.desktop;
 }
