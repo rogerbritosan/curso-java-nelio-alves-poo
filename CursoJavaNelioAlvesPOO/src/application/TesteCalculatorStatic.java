@@ -3,40 +3,35 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class TesteCircle {
-	
-	// versão 1 sobre membros estáticos
-	
-	public static final double PI = 3.14159; // final significa que o valor não muda => constante
-	
+import util.CalculatorStatic;
+
+public class TesteCalculatorStatic {
+		
 	public static void main(String[] args) {
+		
+		// versão 3
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
+		
+		// utilizando membros estáticos da CalculatorStatic, não preciso estanciá-los
+		//Calculator calc = new Calculator();
 		
 		System.out.print("Enter radius: ");
 		double radius = sc.nextDouble();
 		
 		// calcular circunferência do círculo
-		double c = circunference(radius);
+		double c = CalculatorStatic.circunference(radius);
 		
 		// calcular volume do círculo
-		double v = volume(radius);
+		double v = CalculatorStatic.volume(radius);
 		
 		System.out.printf("Circunference: %.2f%n", c);
 		System.out.printf("Volume: %.2f%n", v);
-		System.out.printf("PI value %.2f%n", PI);
+		System.out.printf("PI value %.2f%n", CalculatorStatic.PI);
 		
 		sc.close();
 		
-	}
-	
-	public static double circunference(double radius) {
-		return 2.0 * PI * radius;
-	}
-	
-	public static double volume(double radius) {
-		return 4.0 * PI * Math.pow(radius, 3) / 3;
 	}
 
 }
