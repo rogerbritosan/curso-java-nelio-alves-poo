@@ -6,14 +6,14 @@ import java.util.Scanner;
 import entities.Product2;
 
 public class TestaProduct2 {
-	
+
 	public static void main(String[] args) {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter product data: ");
-		
+
 		System.out.print("Name: ");
 		String name = sc.nextLine();
 

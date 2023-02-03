@@ -63,7 +63,7 @@ public class Alturas {
 				System.out.println(p.getNome());
 			}
 		}
-		
+
 		sc.close();
 
 	}

@@ -20,22 +20,22 @@ public class AbaixoDaMedia {
 			System.out.print("Digite um número: ");
 			nums[i] = sc.nextDouble();
 		}
-		
+
 		double soma = 0.0;
-		for(double num : nums) {
+		for (double num : nums) {
 			soma += num;
 		}
-		
+
 		System.out.println();
-		
+
 		System.out.printf("Média do vetor: %.3f%n", soma / nums.length);
-		
+
 		System.out.println();
-		
+
 		System.out.println("Elementos abaixo da média: ");
-		
-		for(double num : nums) {
-			if(num < (soma / nums.length)) {
+
+		for (double num : nums) {
+			if (num < (soma / nums.length)) {
 				System.out.printf("%.1f%n", num);
 			}
 		}

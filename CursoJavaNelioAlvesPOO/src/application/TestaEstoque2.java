@@ -25,23 +25,22 @@ public class TestaEstoque2 {
 		product.quantity = sc.nextInt();
 
 		System.out.println("Product data: " + product);
-		
+
 		System.out.println();
 		System.out.print("Enter the number of products to be added in stock: ");
-		
-		int quantity = sc.nextInt();		
+
+		int quantity = sc.nextInt();
 		product.addProducts(quantity);
 
 		System.out.println("Updated data: " + product);
-		
+
 		System.out.println();
 		System.out.print("Enter the number of products to be removed in stock: ");
-		
-		quantity = sc.nextInt();	
+
+		quantity = sc.nextInt();
 		product.removeProducts(quantity);
 
 		System.out.println("Updated data: " + product);
-		
 
 		sc.close();
 	}

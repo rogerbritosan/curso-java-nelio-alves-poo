@@ -81,7 +81,8 @@ public class Listas {
 
 		// esse exemplo filtra elementos que começam com determinado elemento
 		// preciso criar uma nova lista
-		// no final é necessário converter pra collect, pois stream não é compatível com list (antigo)
+		// no final é necessário converter pra collect, pois stream não é compatível com
+		// list (antigo)
 		List<String> result = list.stream().filter(x -> x.charAt(0) == 'P').collect(Collectors.toList());
 
 		for (String r : result) {
@@ -89,11 +90,11 @@ public class Listas {
 		}
 
 		System.out.println("----------------------------------------------");
-		
+
 		// se não encontrar retorna nulo
 		String name = list.stream().filter(x -> x.charAt(0) == 'P').findFirst().orElse(null);
 		System.out.println(name);
-		
+
 		name = list.stream().filter(x -> x.charAt(0) == 'W').findFirst().orElse(null);
 		System.out.println(name);
 

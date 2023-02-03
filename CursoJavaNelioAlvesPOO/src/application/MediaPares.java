@@ -39,7 +39,7 @@ public class MediaPares {
 		} else {
 			System.out.println("Nenhum número par.");
 		}
-		
+
 		sc.close();
 
 	}

@@ -20,7 +20,7 @@ public class NumerosPares {
 			System.out.print("Digite o " + (i + 1) + "º número: ");
 			nums[i] = sc.nextInt();
 		}
-		
+
 		System.out.println();
 		System.out.println("NÚMEROS PARES:");
 		String numerosPares = "";

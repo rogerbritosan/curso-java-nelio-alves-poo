@@ -22,16 +22,16 @@ public class SomaVetor {
 			nums[i] = sc.nextDouble();
 
 		}
-		
+
 		String valores = "Valores = ";
 		double soma = 0;
 		double media;
-		
-		for(double n : nums) {
+
+		for (double n : nums) {
 			valores += n + " ";
-			soma += n;			
+			soma += n;
 		}
-		
+
 		System.out.println();
 		System.out.println(valores);
 		System.out.println("SOMA = " + soma);

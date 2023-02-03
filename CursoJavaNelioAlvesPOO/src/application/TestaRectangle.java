@@ -16,13 +16,13 @@ public class TestaRectangle {
 		System.out.print("Enter rectangle width and height: ");
 		rect.width = sc.nextDouble();
 		rect.height = sc.nextDouble();
-		
+
 		System.out.printf("Rectangle area: %.2f%n", rect.area());
 		System.out.printf("Rectangle perimeter: %.2f%n", rect.perimeter());
 		System.out.printf("Rectangle diagonal: %.2f%n", rect.diagonal());
-		
+
 		System.out.println("Rectangle: " + rect);
-		
+
 		sc.close();
 
 	}

@@ -26,20 +26,20 @@ public class MaisVelho {
 			names[i] = sc.nextLine();
 			System.out.print("Idade: ");
 			idades[i] = sc.nextInt();
-			
+
 		}
-		
-		System.out.println();		
-		
-		for(int i = 0; i < quantidade; i++) {
-			if(idades[i] > maisVelho) {
+
+		System.out.println();
+
+		for (int i = 0; i < quantidade; i++) {
+			if (idades[i] > maisVelho) {
 				maisVelho = idades[i];
 				aux = i;
 			}
 		}
-		
+
 		System.out.printf("Pessoa mais velha: %s\n", names[aux]);
-		
+
 		sc.close();
 
 	}

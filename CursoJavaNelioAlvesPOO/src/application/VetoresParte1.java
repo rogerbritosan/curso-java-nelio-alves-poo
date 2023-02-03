@@ -31,9 +31,9 @@ public class VetoresParte1 {
 			sum += p;
 
 		}
-		
+
 		double avg = sum / n;
-		
+
 		System.out.println("Average height: " + avg);
 
 		sc.close();

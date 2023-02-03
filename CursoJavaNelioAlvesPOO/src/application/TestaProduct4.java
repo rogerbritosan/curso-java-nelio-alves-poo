@@ -6,14 +6,14 @@ import java.util.Scanner;
 import entities.Product4;
 
 public class TestaProduct4 {
-	
+
 	public static void main(String[] args) {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter product data: ");
-		
+
 		System.out.print("Name: ");
 		String name = sc.nextLine();
 
@@ -21,7 +21,7 @@ public class TestaProduct4 {
 		double price = sc.nextDouble();
 
 		Product4 product = new Product4(name, price);
-		
+
 //		product.setName("Computer");
 //		System.out.println("Updated name: " + product.getName());
 //		product.setPrice(1200); 
